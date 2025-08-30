@@ -106,19 +106,19 @@ for result in position_results:
 ## Key Scripts
 
 ```bash
-experiments/01_phenomenon_documentation.py
+experiments/phenomenon_documentation.py
 ```
 
 Documents the initial discovery across problem complexities.
 
 ```bash
-mechanistic_investigation/03_position_encoding.py
+mechanistic_investigation/position_encoding.py
 ```
 
 Contains the confirmed mechanism - demonstrates position encoding effects.
 
 ```bash
-experiments/02_scale_analysis.py
+experiments/scale_analysis.py
 ```
 
 Tests whether scale (410M-7B) solves the problem (it doesn't).
