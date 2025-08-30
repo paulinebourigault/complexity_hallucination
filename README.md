@@ -10,18 +10,15 @@ Language models from 410M to 7B parameters exhibit a paradoxical behavior: they 
 
 ```bash
 ├── experiments/
-│   ├── 01_phenomenon_documentation.py    # Initial work
-│   ├── 02_scale_analysis.py              # Testing across model sizes (410M-7B)
-│   └── 03_domain_analysis.py             # Testing across cognitive domains
+│   ├── phenomenon_documentation.py    # Initial work
+│   ├── scale_analysis.py              # Testing across model sizes (410M-7B)
+│   └── domain_analysis.py             # Testing across cognitive domains
 ├── mechanistic_investigation/
-│   ├── 01_layer_causality.py             # Layer-wise template override hypothesis
-│   ├── 02_autoregressive_momentum.py     # Token-level cascade analysis
-│   ├── 03_position_encoding.py           # Position encoding effects (CONFIRMED)
-│   └── 04_token_triggers.py              # Deterministic trigger search
-├── results/
-│   ├── position_encoding_results.json
-│   └── figures/
-├── paper/
+│   ├── layer_causality.py             # Layer-wise template override hypothesis
+│   ├── autoregressive_momentum.py     # Token-level cascade analysis
+│   ├── position_encoding.py           # Position encoding effects (CONFIRMED)
+│   └── token_triggers.py              # Deterministic trigger search
+├── report/
 │   └── complexity_hallucination.pdf
 └── README.md
 ```
@@ -38,19 +35,19 @@ pip install torch transformers numpy matplotlib tqdm scikit-learn
 
 ```bash
 # Test position encoding effect
-python mechanistic_investigation/03_position_encoding.py
+python mechanistic_investigation/position_encoding.py
 ```
 
 ## Run Complete Analysis
 
 ```bash
 # Document phenomenon
-python experiments/01_phenomenon_documentation.py
+python experiments/phenomenon_documentation.py
 
 # Test mechanistic hypotheses
-python mechanistic_investigation/01_layer_causality.py
-python mechanistic_investigation/02_autoregressive_momentum.py
-python mechanistic_investigation/03_position_encoding.py
+python mechanistic_investigation/layer_causality.py
+python mechanistic_investigation/autoregressive_momentum.py
+python mechanistic_investigation/position_encoding.py
 ```
 
 ## Main Results
@@ -66,7 +63,7 @@ python mechanistic_investigation/03_position_encoding.py
 Position encodings drive hallucination through learned patterns:
 
 - Response Length = 1.8 × Padding_Length + 130 (R^2=0.95)
-- Embedding noise causes 203% length increase
+- Embedding noise causes 61% length increase
 - Trigger: `\n\n` token at generation step 4
 
 ### 3. Failed Hypotheses
