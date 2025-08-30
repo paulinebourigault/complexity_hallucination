@@ -8,8 +8,9 @@ Language models from 410M to 7B parameters exhibit a paradoxical behavior: they 
 
 ## Repository Structure
 
+```bash
 ├── experiments/
-│   ├── 01_phenomenon_documentation.py    # Initial discovery and documentation
+│   ├── 01_phenomenon_documentation.py    # Initial work
 │   ├── 02_scale_analysis.py              # Testing across model sizes (410M-7B)
 │   └── 03_domain_analysis.py             # Testing across cognitive domains
 ├── mechanistic_investigation/
@@ -23,6 +24,7 @@ Language models from 410M to 7B parameters exhibit a paradoxical behavior: they 
 ├── paper/
 │   └── complexity_hallucination.pdf
 └── README.md
+```
 
 ## Quick Start
 
@@ -106,18 +108,29 @@ for result in position_results:
 
 ## Key Scripts
 
+```bash
 experiments/01_phenomenon_documentation.py
+```
+
 Documents the initial discovery across problem complexities.
+
+```bash
 mechanistic_investigation/03_position_encoding.py
+```
+
 Contains the confirmed mechanism - demonstrates position encoding effects.
+
+```bash
 experiments/02_scale_analysis.py
+```
+
 Tests whether scale (410M-7B) solves the problem (it doesn't).
 
 ## Key Insights
 
-Not a bug, but learned behavior: Models learn from training data that math problems should have lengthy explanations
-Scale doesn't help: Larger models learn position patterns more precisely, not more correctly
-Evaluation blind spot: Current metrics miss this failure mode entirely
+1. Not a bug, but learned behavior: Models learn from training data that math problems should have lengthy explanations
+2. Scale doesn't help: Larger models learn position patterns more precisely, not more correctly
+3. Evaluation blind spot: Current metrics miss this failure mode entirely
 
 ## Limitations
 
