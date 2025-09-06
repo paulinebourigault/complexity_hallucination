@@ -86,7 +86,7 @@ python run_single.py --experiment position_intervention --model gpt2-medium
 **The mechanism shifts from localized to distributed with scale:**
 
 | Model | Architecture | Position-Sensitive Heads | Causal Heads | Redundancy |
-|-------||-------------||-------------------------||-------------||-----------|
+|-------|--------------|--------------------------|--------------|------------|
 | GPT-2 base | 12L, 144H | 71 (49.3%) | 5 (3.5%) | 14.2x |
 | GPT-2 medium | 24L, 384H | 206 (53.6%) | 0 (0%) | Complete |
 
