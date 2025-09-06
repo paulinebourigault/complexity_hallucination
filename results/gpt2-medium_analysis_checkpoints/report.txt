@@ -1,0 +1,22 @@
+================================================================================
+MECHANISTIC ANALYSIS REPORT
+Model: gpt2-medium
+Date: 2025-09-05T18:17:08.958070
+================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+Through comprehensive mechanistic analysis of gpt2-medium, we identified the causal mechanism driving position-based hallucination. 3 key findings demonstrate that specific attention heads act as position-conditional routers, overriding content-based computation. Direct intervention on position embeddings confirms causality.
+
+KEY FINDINGS
+----------------------------------------
+1. Identified 206 statistically significant position-sensitive attention heads
+2. Optimal position scaling of 1.11x reduces hallucination
+3. Answer computed before hallucination signals appear
+
+METHODOLOGY
+----------------------------------------
+- Replication: 10 runs per condition
+- Statistical confidence: 95%
+- Effect size threshold: 0.2
+- Multiple testing correction: Bonferroni
