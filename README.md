@@ -1,6 +1,6 @@
 # Distributed Circuits Drive LLM Hallucination
 
-A mechanistic investigation revealing how position-driven hallucination emerges from distributed redundant circuits in language models from 410M to 7B parameters.
+A mechanistic investigation revealing how position-driven hallucination emerges from distributed redundant circuits in language models from 124M to 7B parameters.
 
 ## Key Finding
 
