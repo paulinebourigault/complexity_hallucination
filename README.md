@@ -142,16 +142,16 @@ python run_all.py --model gpt2-medium
 
 | Model | Parameters | Accuracy | Hallucination Rate | Mechanistic Analysis |
 |-------|------------|----------|--------------------|----------------------|
-| GPT-2 base | 124M | - | - | Full analysis|
-| GPT-2 medium | 345M | - | -| Full analysis |
-| Pythia-410M | 0.41B | 46.7% | 46.7% | Phenomenon only |
-| Pythia-1.4B | 1.4B | 53.3% | 66.7% | Phenomenon only |
+| GPT-2 base | 124M | 60.0% | 66.7% | Full analysis|
+| GPT-2 medium | 345M | 60.0% | 53.3% | Full analysis |
+| Pythia-410M | 0.41B | 53.3% | 60.0% | Phenomenon only |
+| Pythia-1.4B | 1.4B | 60.0% | 60.0% | Phenomenon only |
 | Gemma-2B | 2.0B | 93.3% | 26.7% | Position analysis |
-| StableLM-3B | 3.0B | 80.0% | 33.3% | Phenomenon only |
-| Pythia-6.9B | 6.9B | 66.7% | 40.0% | Phenomenon only |
-| Llama-2-7B | 7.0B | 93.3% | 26.7% | Phenomenon only |
-| Mistral-7B | 7.0B | 86.7% | 13.3% | Phenomenon only |
-| Gemma-7B | 7.0B | 100.0% | 33.3% | Phenomenon only |
+| StableLM-3B | 3.0B | 80.0% | 53.3% | Phenomenon only |
+| Pythia-6.9B | 6.9B | 66.7% | 33.3% | Phenomenon only |
+| Llama-2-7B | 7.0B | 93.3% | 33.3% | Phenomenon only |
+| Mistral-7B | 7.0B | 93.3% | 20.0% | Phenomenon only |
+| Gemma-7B | 7.0B | 100.0% | 40.0% | Phenomenon only |
 
 ## Implications
 
