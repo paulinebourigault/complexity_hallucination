@@ -37,7 +37,8 @@ Language models exhibit a paradoxical behavior: they achieve up to 100% accuracy
 ├── results/
 │   ├── gpt2_analysis.png             # GPT-2 base mechanistic results
 │   ├── gpt2_medium_analysis.png      # GPT-2 medium comparison
-│   └── scale_analysis_results.json
+│   ├── scale_analysis_results.json   # Scale analysis of different models
+|   └── hallucination_study.json      # Hallucination study of different models
 │
 ├── report/
 │   └── Distributed_Circuits_Drive_LLM_Hallucination.pdf
@@ -142,8 +143,8 @@ python run_all.py --model gpt2-medium
 
 | Model | Parameters | Accuracy | Hallucination Rate | Mechanistic Analysis |
 |-------|------------|----------|--------------------|----------------------|
-| GPT-2 base | 124M | 60.0% | 66.7% | Full analysis|
-| GPT-2 medium | 345M | 60.0% | 53.3% | Full analysis |
+| GPT-2 base | 124M | 60.0% | 66.7% | Detailed analysis|
+| GPT-2 medium | 345M | 60.0% | 53.3% | Detailed analysis |
 | Pythia-410M | 0.41B | 53.3% | 60.0% | Phenomenon only |
 | Pythia-1.4B | 1.4B | 60.0% | 60.0% | Phenomenon only |
 | Gemma-2B | 2.0B | 93.3% | 26.7% | Position analysis |
